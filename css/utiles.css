@@ -1,0 +1,25 @@
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    text-align: center;
+    width: 7vh;
+    height:3vh;
+    margin: 3vh 3vh 3vh 1vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #e4ebf7;
+    cursor: pointer;  /*by using this when we place a cursor over the button the pointer will change*/ 
+    font-weight: 300;
+}
+.btn:hover{
+   color: black;
+   /* font-weight: 500; */
+}

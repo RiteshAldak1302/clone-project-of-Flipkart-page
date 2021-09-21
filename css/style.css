@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+     --main-bg-color:#2874f0;  /* this global variable we can use this every where  */
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--main-bg-color);
+    
+   
+    font-family: 'Open Sans Condensed', sans-serif; /* this should be the container */
+}
+nav {
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items:center;
+}
+.logo img{
+    width: 88px;
+    padding: 0px 25px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+nav ul{
+     height: 58px; /* ye hume header m dena tha but to align the items in center. we write this in the ul to make elements of  ul in the center */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.searchbar{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.search {
+    display:flex;
+     align-items: center;  /*this make the search bar in centre */
+}
+.search input{
+    width:380px ;
+    height: 25px; 
+    border-radius: 2px;
+    margin: 0  5px 0px 55px;
+    padding: 0px 12px;
+}
+.slider {
+    /* margin: 2vh auto; */
+   margin: 2vh auto 0vh auto;
+    width: 88vw; 
+    height: 250px;
+    overflow: hidden;
+
+}
+ .loginbtn{
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 82px;
+    height: 37px;
+    margin: auto;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 19px;
+    color: #2874f0;
+ }
+ .loginbtn:hover{
+     cursor:pointer ;
+     font-size: 21px;
+ }
+.card{
+    /* background-color: tomato; */
+    height: 250px;
+    margin: 2px auto;
+    width: 92vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card h2{
+    display:  flex;
+    font-family:  'Bona Nova', serif;
+    margin:  11px;  
+}
+.cards{
+    display: inline-flex;
+    overflow: hidden;
+    /* width: vw; */
+}
+.card-items{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 228px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.text-center{
+    text-align: center;
+    margin: 4px;
+    width: 8vw;
+    font-family: 'Roboto', sans-serif;
+}
+footer{
+    background-color: var(--main-bg-color);
+    height: 6vh;
+    color: white;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.card-items img:hover{
+    width: 144px;
+    height: 144px;
+}
+.sliderbox{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+    margin: 0px auto;
+}
+.sliderbtn1{
+    height: 249px;
+    width: 40px;
+    background-color: white;
+    align-items: flex-start;
+    margin: 14.5px 0px 0px;
+    font-size: xx-large;
+    border-radius: 2px solid black;
+    font-weight: bold;
+}
+.sliderbtn2{
+    height: 249px;
+    width: 40px;
+    background-color: white;
+    align-items: flex-start;
+    margin: 14.5px 0px 0px;
+    font-size: xx-large;
+    border-radius: 2px solid black;
+    font-weight: bold;
+}
+#slide1{
+    border: white;
+    height: 100%;
+    width: 100%;
+    
+}
